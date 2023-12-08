@@ -29,7 +29,7 @@ class Solution:
 
         while left <= right:
             if mountain[left] > mountain[left - 1] and mountain[left] > mountain[left + 1]:
-                peaks.push(mountain[left])
+                peaks.append(left)
             left += 1
 
         return peaks
