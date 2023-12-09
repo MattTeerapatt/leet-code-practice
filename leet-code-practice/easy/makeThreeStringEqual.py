@@ -39,13 +39,13 @@ class Solution:
             return -1
         minLen = min(len(s1), len(s2), len(s3))
 
-        res = len(s1) + len(s2) + len(s3) 
+        result = len(s1) + len(s2) + len(s3) 
         for i in range(minLen):
             if s1[i] == s2[i] == s3[i]:
-                res -= 3
+                result -= 3 # Decrement the sum by 3 for each matching character in the strings
             else:
-                break
-        return res
+                break # Break the loop when a mismatch is encountered
+        return result
 
         
             
