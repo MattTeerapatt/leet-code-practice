@@ -15,7 +15,7 @@ class Solution:
     
 solution = Solution()
 nums = [0,1,2,2,3,0,4,2]
-val = 2
+val = 3
 result = solution.removeElement(nums, val)
 print(f"Result: {result}, nums = {nums[:result]}")# [start:end:step]
          
